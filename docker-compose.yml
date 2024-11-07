@@ -1,0 +1,23 @@
+   version: '3'
+
+   services:
+     db:
+       image: mongo:latest
+       ports:
+         - "27017:27017"
+       networks:
+         - app-network
+
+     cache:
+       image: redis:latest
+       ports:
+         - "6379:6379"
+       networks:
+         - app-network
+
+   networks:
+     app-network:
+       driver: bridge
+   ```
+
+

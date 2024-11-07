@@ -1,0 +1,7 @@
+Initialized repository
+git init
+git remote add origin ...
+git checkout -b main
+git checkout -b develop
+git checkout -b feature/database-service
+git checkout -b feature/cache-service
